@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff4e0">
+    <meta name="description" content="Halaman yang kamu cari tidak ditemukan di ingetin.">
+    <meta property="og:title" content="Halaman tidak ditemukan — ingetin">
+    <meta property="og:description" content="Kembali ke papan pengumuman kuliahmu.">
+    <title>Halaman tidak ditemukan — ingetin</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root { --paper:#fff4e0; --surface:#fffdf7; --ink:#171511; --muted:#625d53; --accent:#ffcc4d; }
+      :root[data-theme="dark"] { color-scheme:dark; --paper:#211f1b; --surface:#302d27; --ink:#fff6e7; --muted:#d0c7b8; }
+      * { box-sizing:border-box; }
+      body { margin:0; min-width:320px; min-height:100vh; display:flex; flex-direction:column; background:var(--paper); color:var(--ink); font:16px/1.55 Inter,sans-serif; }
+      a { color:inherit; }
+      :focus-visible { outline:3px solid #9c4c00; outline-offset:3px; }
+      .skip-link { position:absolute; top:-60px; left:12px; z-index:2; padding:9px 13px; border:3px solid var(--ink); background:var(--surface); font-weight:700; }
+      .skip-link:focus { top:12px; }
+      header { border-bottom:3px solid var(--ink); background:var(--surface); }
+      .header-inner, footer { width:min(1180px,calc(100% - 36px)); margin:auto; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+      .header-inner { min-height:72px; }
+      .brand { font:700 24px/1 "Space Grotesk",sans-serif; letter-spacing:-.06em; text-decoration:none; }
+      nav { display:flex; align-items:center; flex-wrap:wrap; gap:16px; }
+      nav a { font-size:13px; font-weight:700; text-decoration:none; }
+      button, .home-link { min-height:42px; padding:8px 13px; border:3px solid var(--ink); border-radius:5px; background:var(--accent); color:#171511; box-shadow:3px 3px 0 var(--ink); font:700 13px Inter,sans-serif; text-decoration:none; cursor:pointer; }
+      main { width:min(760px,calc(100% - 36px)); margin:auto; padding:64px 0; text-align:center; }
+      .card { padding:clamp(24px,6vw,52px); border:3px solid var(--ink); border-radius:7px; background:var(--surface); box-shadow:6px 6px 0 var(--ink); }
+      .art { width:118px; height:94px; margin-bottom:12px; }
+      h1 { margin:0 0 10px; font:700 clamp(32px,7vw,48px)/1.05 "Space Grotesk",sans-serif; letter-spacing:-.06em; }
+      p { margin:0 auto 22px; max-width:460px; color:var(--muted); }
+      footer { min-height:88px; padding:18px 0; border-top:3px solid var(--ink); flex-wrap:wrap; }
+      footer p { margin:0; font-size:11px; text-align:center; }
+      footer nav { gap:10px 14px; }
+      footer nav a { font-size:11px; }
+      @media (max-width:680px) { .header-inner { padding:13px 0; flex-wrap:wrap; } .header-inner nav { width:100%; justify-content:space-between; gap:8px; } main { padding:40px 0; } footer { justify-content:center; } }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+    <header><div class="header-inner">
+      <a class="brand base-link" data-suffix="index.html#/" href="./index.html#/">ingetin ✳</a>
+      <nav aria-label="Navigasi utama">
+        <a class="base-link" data-suffix="index.html#/dashboard" href="./index.html#/dashboard">Dashboard</a>
+        <a class="base-link" data-suffix="index.html#/matkul" href="./index.html#/matkul">Matkul</a>
+        <a class="base-link" data-suffix="index.html#/tugas" href="./index.html#/tugas">Tugas</a>
+        <button id="theme-toggle" type="button" aria-label="Aktifkan mode gelap">☾</button>
+      </nav>
+    </div></header>
+    <main id="main-content" tabindex="-1"><section class="card">
+      <svg class="art" viewBox="0 0 160 120" role="img" aria-label="Ilustrasi papan catatan kosong">
+        <rect x="26" y="14" width="108" height="92" rx="5" fill="#ffcf5a" stroke="#171511" stroke-width="4" transform="rotate(-5 80 60)"/>
+        <path d="M50 43h58M48 61h45M52 79h35" stroke="#171511" stroke-width="5" stroke-linecap="round"/>
+        <path d="M121 88l15 15" stroke="#171511" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="121" cy="88" r="9" fill="#ff8066" stroke="#171511" stroke-width="4"/>
+      </svg>
+      <h1>Catatan ini terselip.</h1>
+      <p>Halaman yang kamu cari tidak ditemukan. Tenang, papan kuliahmu masih aman.</p>
+      <a class="home-link base-link" data-suffix="index.html#/" href="./index.html#/">Kembali ke beranda</a>
+    </section></main>
+    <footer>
+      <p>© <span id="current-year"></span> Jose Armando Manik. Hak cipta dilindungi.</p>
+      <nav aria-label="Tautan legal">
+        <a class="base-link" data-suffix="index.html#/tentang" href="./index.html#/tentang">Tentang</a>
+        <a class="base-link" data-suffix="index.html#/privasi" href="./index.html#/privasi">Kebijakan Privasi</a>
+        <a class="base-link" data-suffix="index.html#/syarat" href="./index.html#/syarat">Syarat &amp; Ketentuan</a>
+        <a class="base-link" data-suffix="index.html#/kontak" href="./index.html#/kontak">Kontak</a>
+      </nav>
+    </footer>
+    <script>
+      const pathParts = window.location.pathname.split("/").filter(Boolean);
+      const siteBase = window.location.hostname.endsWith("github.io") && pathParts.length ? `/${pathParts[0]}/` : "/";
+      document.querySelectorAll(".base-link").forEach((link) => { link.href = `${siteBase}${link.dataset.suffix}`; });
+      document.querySelector("#current-year").textContent = String(new Date().getFullYear());
+      const themeButton = document.querySelector("#theme-toggle");
+      const setTheme = (theme) => {
+        document.documentElement.dataset.theme = theme;
+        themeButton.textContent = theme === "dark" ? "☀" : "☾";
+        themeButton.setAttribute("aria-label", theme === "dark" ? "Aktifkan mode terang" : "Aktifkan mode gelap");
+      };
+      setTheme(localStorage.getItem("ingetin-theme") || "light");
+      themeButton.addEventListener("click", () => {
+        const theme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+        localStorage.setItem("ingetin-theme", theme);
+        setTheme(theme);
+      });
+    </script>
+  </body>
+</html>
